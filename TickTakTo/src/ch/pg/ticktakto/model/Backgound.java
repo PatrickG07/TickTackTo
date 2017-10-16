@@ -1,11 +1,16 @@
 package ch.pg.ticktakto.model;
 
+/**
+ * the backgound Class for saving the streaks and the Bot
+ * 
+ * @author Patrick
+ */
 public class Backgound {
 
 	public static int streak1;
 	public static int streak2;
 	
-	public static Boolean KI = false;
+	public static Boolean Bot = false;
 	
 	public static int getStreak1() {
 		return streak1;
@@ -20,10 +25,10 @@ public class Backgound {
 		Backgound.streak2 = streak2;
 	}
 	public static Boolean getKI() {
-		return KI;
+		return Bot;
 	}
 	public static void setKI(Boolean kI) {
-		KI = kI;
+		Bot = kI;
 	}
 	
 }

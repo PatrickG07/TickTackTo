@@ -9,7 +9,7 @@ public class Box {
 	private Image picture;
 
 	/**
-	 * for seting the corect image for each player
+	 * for seting the corect image for each player cross or circle
 	 */
 	public void fix() {
 		if (fixed == false) {
@@ -25,7 +25,7 @@ public class Box {
 				picture = new Image("/ch/pg/ticktakto/sources/cross.png");
 				break;
 			case 2:
-				picture = new Image("/ch/pg/ticktakto/sources/sircle.png");
+				picture = new Image("/ch/pg/ticktakto/sources/circle.png");
 				break;
 			}
 		}

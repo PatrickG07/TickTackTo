@@ -3,9 +3,9 @@ package ch.pg.ticktakto.model;
 import ch.pg.ticktakto.model.Box;
 
 /**
+ * The Game class how creates the Boxs, tabels and the players.
+ * 
  * @author Patrick
- *
- *         The Game class how creates the Boxs, tabels and the players.
  */
 public class Game {
 
@@ -30,7 +30,7 @@ public class Game {
 	public static int end = 0;
 
 	/**
-	 * Table reseter
+	 * it will reset the Box and the Bot
 	 */
 	public void Type() {
 		Game.Box1.setFixed(false);
@@ -54,8 +54,8 @@ public class Game {
 		Game.Box9.setValue(0);
 
 		end = 0;
-		
-		KI.kinumber = 0;
+
+		Bot.kinumber = 0;
 	}
 
 	public static String getActualTable() {

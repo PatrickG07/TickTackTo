@@ -5,16 +5,16 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 
 /**
- * @author Patrick
- *
  * The start controller class.
+ * 
+ * @author Patrick
  */
 public class Controllerstart {
 
 	/**
-	 * @param e
-	 * 
 	 * Changes the stage to the Player name setter controller class.
+	 * 
+	 * @param e
 	 */
 	@FXML
 	protected void Spielen(ActionEvent e) {
@@ -22,9 +22,9 @@ public class Controllerstart {
 	}
 
 	/**
-	 * @param e
-	 * 
 	 * Closes The Programm
+	 * 
+	 * @param e
 	 */
 	@FXML
 	protected void Quit(ActionEvent e) {

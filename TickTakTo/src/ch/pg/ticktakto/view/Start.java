@@ -12,9 +12,9 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 /**
- * @author Patrick
- * 
  * The first Class.
+ * 
+ * @author Patrick
  */
 public class Start extends Application {
 
@@ -42,9 +42,9 @@ public class Start extends Application {
 	}
 
 	/**
-	 * @param name
-	 * 
 	 * changes the FXML scene.
+	 * 
+	 * @param name
 	 */
 	public static void loadScene(String name) {
 		Parent parentToLoad = null;

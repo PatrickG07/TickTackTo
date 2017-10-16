@@ -5,22 +5,22 @@ import java.util.Optional;
 import java.util.Random;
 
 import ch.pg.ticktakto.model.Game;
-import ch.pg.ticktakto.model.KI;
+import ch.pg.ticktakto.model.Bot;
 import ch.pg.ticktakto.model.Backgound;
 import ch.pg.ticktakto.view.Start;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.ButtonType;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
 
 /**
+ * The Controller where the Game is.
  * 
  * @author Patrick
- * 
- *         The Controller where the Game is.
  */
 public class Controllerplay {
 
@@ -38,12 +38,25 @@ public class Controllerplay {
 	Game game = new Game();
 
 	/**
-	 * @throws SQLException
+	 * for an random start who will start or if the Bot is enabled the person will
+	 * start first and then the Bot second
 	 * 
-	 *             for an randmom start who will start
+	 * @throws SQLException
 	 */
 	@FXML
 	public void initialize() {
+
+		javafx.scene.image.Image picture = new Image("/ch/pg/ticktakto/sources/ramen.png");
+		image1.setImage(picture);
+		image2.setImage(picture);
+		image3.setImage(picture);
+		image4.setImage(picture);
+		image5.setImage(picture);
+		image6.setImage(picture);
+		image7.setImage(picture);
+		image8.setImage(picture);
+		image9.setImage(picture);
+
 		game.Type();
 		Random random = new Random();
 		value = random.nextInt(2) + 1;
@@ -63,10 +76,10 @@ public class Controllerplay {
 	}
 
 	/**
-	 * @param e
+	 * Click on a ImageVIew for an Cross or an circle and changes the table to the
+	 * other person or if the Bot is enabled it will set the circle
 	 * 
-	 *            Klick on a ImageVIew for an Cross or an sircle and changes the
-	 *            table to the other person
+	 * @param e
 	 */
 	@FXML
 	protected void Fix(MouseEvent e) {
@@ -87,10 +100,12 @@ public class Controllerplay {
 						|| !(Game.Box4.getValue() == 0) || !(Game.Box5.getValue() == 0) || !(Game.Box6.getValue() == 0)
 						|| !(Game.Box7.getValue() == 0) || !(Game.Box8.getValue() == 0)
 						|| !(Game.Box9.getValue() == 0)) {
-					Game.actualTable = "table2";
-					KI.inteligenz();
+					names.setText(Game.play2.getName());
 
-					numbers = "image" + KI.kinumber;
+					Game.actualTable = "table2";
+					Bot.intelligence();
+
+					numbers = "image" + Bot.kinumber;
 
 					Case();
 
@@ -182,10 +197,10 @@ public class Controllerplay {
 	}
 
 	/**
-	 * @param e
+	 * who will win and an screen for going back to the start or to play again
+	 * (first scene)
 	 * 
-	 *            who will win and an screen for going back to the start (first
-	 *            scene)
+	 * @param e
 	 */
 	@FXML
 	public void End() {

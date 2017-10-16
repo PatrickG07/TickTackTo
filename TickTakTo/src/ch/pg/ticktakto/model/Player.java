@@ -1,5 +1,10 @@
 package ch.pg.ticktakto.model;
 
+/**
+ * The Player class for the names of the different players
+ * 
+ * @author Patrick
+ */
 public class Player {
 
 	public String name;

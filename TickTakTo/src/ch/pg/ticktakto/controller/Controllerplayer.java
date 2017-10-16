@@ -9,10 +9,9 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 
 /**
+ * Controller class for set player name.
  * 
  * @author Patrick
- *
- *         Controller class for set player name.
  */
 public class Controllerplayer {
 
@@ -23,10 +22,10 @@ public class Controllerplayer {
 	protected RadioButton RBKI;
 
 	/**
-	 * @param e
+	 * set a red border around the TextFilds when nothing are tipped. and to set if
+	 * you want to play against a Bot
 	 * 
-	 *            set a red border around the TextFilds when nothing are tiped.
-	 *            and to set if you want to play against an AI / KI
+	 * @param e
 	 */
 	@FXML
 	protected void Play(ActionEvent e) {
@@ -35,7 +34,7 @@ public class Controllerplayer {
 		} else {
 			Backgound.setKI(false);
 		}
-		
+
 		if (!player1.getText().equals("") && !player2.getText().equals("") && Backgound.getKI() == false) {
 			Game.play1.setName(player1.getText());
 			Game.play2.setName(player2.getText());
@@ -43,7 +42,7 @@ public class Controllerplayer {
 			Start.loadScene("/ch/pg/ticktakto/view/Playground");
 		} else if (!player1.getText().equals("") && Backgound.getKI() == true) {
 			Game.play1.setName(player1.getText());
-			Game.play2.setName("KI / AI");
+			Game.play2.setName("Bot");
 
 			Start.loadScene("/ch/pg/ticktakto/view/Playground");
 		} else {
@@ -53,9 +52,9 @@ public class Controllerplayer {
 	}
 
 	/**
-	 * @param e
+	 * Returns to the main Controller.
 	 * 
-	 *            Returns to the main Controller.
+	 * @param e
 	 */
 	@FXML
 	protected void Back(ActionEvent e) {

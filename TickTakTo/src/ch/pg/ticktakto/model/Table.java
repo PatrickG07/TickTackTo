@@ -32,19 +32,19 @@ public class Table {
 		if (Box1 == Box2 && Box2 == Box3 && Boxf1 == true && Boxf2 == true && Boxf3 == true) {
 			if (Box1 == 1) {
 				Game.end = 1;
-			} else if(Box1 == 2){
+			} else if (Box1 == 2) {
 				Game.end = 2;
 			}
 		} else if (Box4 == Box5 && Box5 == Box6 && Boxf4 == true && Boxf5 == true && Boxf6 == true) {
 			if (Box4 == 1) {
 				Game.end = 1;
-			} else if(Box4 == 2){
+			} else if (Box4 == 2) {
 				Game.end = 2;
 			}
 		} else if (Box7 == Box8 && Box8 == Box9 && Boxf7 == true && Boxf8 == true && Boxf9 == true) {
 			if (Box7 == 1) {
 				Game.end = 1;
-			} else if(Box7 == 2){
+			} else if (Box7 == 2) {
 				Game.end = 2;
 			}
 
@@ -52,19 +52,19 @@ public class Table {
 		} else if (Box1 == Box4 && Box4 == Box7 && Boxf1 == true && Boxf4 == true && Boxf7 == true) {
 			if (Box1 == 1) {
 				Game.end = 1;
-			} else if(Box1 == 2){
+			} else if (Box1 == 2) {
 				Game.end = 2;
 			}
 		} else if (Box2 == Box5 && Box5 == Box8 && Boxf2 == true && Boxf5 == true && Boxf8 == true) {
 			if (Box2 == 1) {
 				Game.end = 1;
-			} else if(Box2 == 2){
+			} else if (Box2 == 2) {
 				Game.end = 2;
 			}
 		} else if (Box3 == Box6 && Box6 == Box9 && Boxf3 == true && Boxf6 == true && Boxf9 == true) {
 			if (Box3 == 1) {
 				Game.end = 1;
-			} else if(Box3 == 2){
+			} else if (Box3 == 2) {
 				Game.end = 2;
 			}
 
@@ -72,13 +72,13 @@ public class Table {
 		} else if (Box1 == Box5 && Box5 == Box9 && Boxf1 == true && Boxf5 == true && Boxf9 == true) {
 			if (Box1 == 1) {
 				Game.end = 1;
-			} else if(Box1 == 2){
+			} else if (Box1 == 2) {
 				Game.end = 2;
 			}
 		} else if (Box3 == Box5 && Box5 == Box7 && Boxf3 == true && Boxf5 == true && Boxf7 == true) {
 			if (Box3 == 1) {
 				Game.end = 1;
-			} else if(Box3 == 2){
+			} else if (Box3 == 2) {
 				Game.end = 2;
 			}
 		}
