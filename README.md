@@ -1,4 +1,4 @@
 # TickTackTo
-TickTackTo with an KI / AI
+TickTackTo with a Bot
 
-An small game with an KI / AI that is always against you
+An small game with a Bot that is always against you
